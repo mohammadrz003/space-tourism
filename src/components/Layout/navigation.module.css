@@ -3,13 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0 2rem 2rem;
+  padding: 1.5rem;
 }
 
 .logoPart {
-  width: 45%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .logoPartInbox {
@@ -17,41 +18,141 @@
   max-width: 576px;
 }
 
-.navigatePart {
-  width: 55%;
-  display: flex;
-  justify-content: flex-start;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 0 2rem;
+.logoPartInbox img {
+  width: 40px;
+  height: 40px;
 }
+
+.hamburgetBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.navigatePart {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  padding: 8rem 0 0 2rem;
+}
+
 
 .navgitationList {
   width: 100%;
-  max-width: 704px;
   color: white;
   font-family: "Barlow Condensed", sans-serif;
   display: flex;
-  justify-content: center;
-  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
+.navgitationList a {
+  width: 100%;
+}
 .navgitationList li {
-  padding: 2rem 0;
+  width: 100%;
+  padding: 0.3rem 0;
   cursor: pointer;
 }
 
 .active li {
-  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
 }
 
 .unactive li:hover {
   transition: 125ms ease all;
-  border-bottom: 3px solid #979797;
+  border-right: 3px solid #979797;
 }
 
 .navgitationList span {
   font-weight: 700;
   margin-right: 0.7rem;
+}
+
+/* || BREAK POINTS */
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .logoPart {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logoPartInbox img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hamburgetBtn {
+    display: none;
+  }
+
+  .navigatePart {
+    width: 55%;
+    display: flex;
+    position: initial;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0 2rem;
+  }
+
+  .navgitationList {
+    width: 100%;
+    max-width: 704px;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+    font-size: 1rem;
+  }
+
+  .navgitationList a {
+    width: initial;
+  }
+
+  .navgitationList li {
+    padding: 2rem 0;
+    cursor: pointer;
+  }
+  
+  .active li {
+    border-bottom: 3px solid #ffffff;
+    border-right: 0;
+  }
+  
+  .unactive li:hover {
+    transition: 125ms ease all;
+    border-bottom: 3px solid #979797;
+    border-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
