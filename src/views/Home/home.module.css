@@ -1,0 +1,36 @@
+.homeContainer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+}
+
+.heroData {
+  width: 45%;
+}
+
+.heroExplore {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.homeHeader {
+  font-size: 160px;
+}
+
+.exploreBtn {
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  outline: 0px solid #979797;
+  transition: 200ms ease all;
+}
+
+.exploreBtn:hover {
+  outline: 50px solid #979797;
+}
