@@ -1,0 +1,44 @@
+.destinationContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.planetImg {
+  width: 410px;
+  height: 410px;
+}
+
+.tabHeader {
+  text-transform: uppercase;
+}
+
+.tabCategory {
+  border-bottom: 3px solid #ffffff !important;
+}
+
+.destinationPlanetName {
+  font-size: 115px;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  .planetImg {
+    width: 380px;
+    height: 380px;
+  }
+  .destinationPlanetName {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .planetImg {
+    width: 410px;
+    height: 410px;
+  }
+  .destinationPlanetName {
+    font-size: 115px;
+  }
+}

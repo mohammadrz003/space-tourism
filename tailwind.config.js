@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         dark: "#0B0D17",
         lightblue: "#D0D6F9",
+        lightGray: "#979797",
+        darkGray: "#383B4B"
       },
       fontFamily: {
         bellefair: "'Bellefair', sans-serif",
