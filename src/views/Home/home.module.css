@@ -12,7 +12,7 @@
 }
 
 .heroExplore {
-  margin-top: 4rem;
+  margin-top: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -39,6 +39,26 @@
 /* || BREAK POINTS */
 
 @media screen and (min-width: 768px) {
+  .homeHeader {
+    font-size: 150px;
+  }
+
+  .heroExplore {
+    margin-top: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exploreBtn {
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    outline: 0px solid #979797;
+    transition: 200ms ease all;
+  }
 }
 
 @media screen and (min-width: 1024px) {

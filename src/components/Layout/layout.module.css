@@ -1,8 +1,0 @@
-.backgroundWrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("../../assets/home/background-home-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-weight: 400;
-}
