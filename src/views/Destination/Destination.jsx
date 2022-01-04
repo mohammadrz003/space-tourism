@@ -12,7 +12,7 @@ const Destination = () => {
 
   return (
     <section className={styles.destinationContainer}>
-      <h3 className="text-center lg:text-left font-barlow text-white text-xl lg:text-3xl tracking-widest uppercase">
+      <h3 className="text-center md:text-left font-barlow text-white text-xl md:text-2xl lg:text-3xl tracking-widest uppercase">
         <span className="opacity-25 mr-4">01</span>Pick your destination
       </h3>
       <div className="flex flex-col lg:flex-row py-10 lg:space-x-28 xl:space-x-40">
@@ -44,11 +44,13 @@ const Destination = () => {
                   >
                     {element.name}
                   </h2>
-                  <p className="text-center lg:text-left font-barlow text-lightblue text-base tracking-wider">
-                    {element.description}
-                  </p>
+                  <div className="flex justify-center lg:justify-start">
+                    <p className="w-full max-w-lg lg:max-w-none text-center lg:text-left font-barlow text-lightblue text-base tracking-wider">
+                      {element.description}
+                    </p>
+                  </div>
                   <hr className="border-none bg-darkGray h-px my-8" />
-                  <ul className="flex flex-col items-center lg:flex-row space-y-5 lg:space-y-0 lg:space-x-14">
+                  <ul className="flex flex-col items-center md:flex-row md:justify-center lg:justify-start space-y-5 md:space-y-0 md:space-x-14">
                     <li className="flex flex-col items-center lg:items-start uppercase">
                       <span className="text-lightblue font-barlow text-lg">
                         AVG. DISTANCE
