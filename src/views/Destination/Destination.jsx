@@ -1,6 +1,5 @@
 import styles from "./destination.module.css";
 import { useState } from "react";
-import moon from "../../assets/destination/image-moon.webp";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import data from "../../data.json";
 import "react-tabs/style/react-tabs.css";

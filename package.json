@@ -12,6 +12,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-tabs": "^3.2.3",
+    "swiper": "^7.4.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

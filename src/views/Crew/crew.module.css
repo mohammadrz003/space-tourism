@@ -1,0 +1,19 @@
+.crewContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 0 2rem;
+}
+
+/* .mainContainer {
+  height: calc(100vh - 187px);
+} */
+
+.crewImgWrapper {
+  display: flex;
+  justify-content: center;
+}
+.crewImgWrapper img {
+  width: 400px;
+  height: auto;
+}
