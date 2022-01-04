@@ -15,32 +15,30 @@ const Crew = () => {
         <h3 className="text-center md:text-left font-barlow text-white text-xl md:text-2xl lg:text-3xl tracking-widest uppercase">
           <span className="opacity-25 mr-4">02</span>Meet your crew
         </h3>
-        <div className={styles.sliderWrapper}>
+        <div className={`${styles.sliderWrapper} mt-8 lg:mt-0`}>
           <Swiper
             pagination={{ el: ".my-custom-pagination-div", clickable: true }}
             spaceBetween={0}
             slidesPerView={1}
             autoplay={{ delay: 3000 }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
-            {data.crew.map((element) => {
+            {data.crew.map((element, index) => {
               return (
-                <SwiperSlide>
-                  <div className="w-full flex space-x-10">
-                    <div className="w-1/2 flex flex-col justify-center">
-                      <h4 className="uppercase text-white opacity-50 text-3xl font-bellefair">
+                <SwiperSlide key={index}>
+                  <div className="w-full flex flex-col-reverse md:flex-col lg:flex-row lg:space-x-10">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                      <h4 className="mt-8 lg:mt-0 text-center lg:text-left uppercase text-white opacity-50 md:text-2xl lg:text-3xl font-bellefair">
                         {element.role}
                       </h4>
-                      <h3 className="mt-4 mb-7 text-white uppercase font-bellefair text-5xl">
+                      <h3 className="text-center lg:text-left mt-2 mb-4 lg:mt-4 lg:mb-7 text-white uppercase font-bellefair text-2xl md:text-4xl lg:text-5xl">
                         {element.name}
                       </h3>
-                      <p className="text-lightblue tracking-wider">
+                      <p className="text-center lg:text-left text-lightblue lg:tracking-wider">
                         {element.bio}
                       </p>
-                      <div className="my-custom-pagination-div mt-12 space-x-4"></div>
+                      <div className="my-custom-pagination-div flex justify-center lg:justify-start mt-12 space-x-4"></div>
                     </div>
-                    <div className={`${styles.crewImgWrapper} w-1/2`}>
+                    <div className={`${styles.crewImgWrapper} w-full md:mt-12 lg:mt-0 lg:w-1/2`}>
                       <img src={element.images.webp} alt="" />
                     </div>
                   </div>
