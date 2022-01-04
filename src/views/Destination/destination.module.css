@@ -2,12 +2,12 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
 .planetImg {
-  width: 410px;
-  height: 410px;
+  width: 170px;
+  height: 170px;
 }
 
 .tabHeader {
@@ -19,12 +19,19 @@
 }
 
 .destinationPlanetName {
-  font-size: 115px;
+  font-size: 56px;
 }
 
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
+  .destinationContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+
   .planetImg {
     width: 380px;
     height: 380px;
