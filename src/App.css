@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
 
-.swiper-pagination-bullet {
-  background-color: #979797 !important;
-  width: 12px !important;
-  height: 12px !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-pagination-bullet {
-    background-color: #979797 !important;
-    width: 15px !important;
-    height: 15px !important;
-  }
+body {
+    overflow-x: hidden;
 }

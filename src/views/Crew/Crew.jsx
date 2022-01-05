@@ -38,7 +38,9 @@ const Crew = () => {
                       </p>
                       <div className="my-custom-pagination-div flex justify-center lg:justify-start mt-12 space-x-4"></div>
                     </div>
-                    <div className={`${styles.crewImgWrapper} w-full md:mt-12 lg:mt-0 lg:w-1/2`}>
+                    <div
+                      className={`${styles.crewImgWrapper} w-full md:mt-12 lg:mt-0 lg:w-1/2`}
+                    >
                       <img src={element.images.webp} alt="" />
                     </div>
                   </div>

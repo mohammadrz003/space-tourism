@@ -15,7 +15,21 @@
   width: auto;
 }
 
+.sliderWrapper :global(.swiper-pagination-bullet) {
+  background-color: #979797;
+  width: 12px;
+  height: 12px;
+}
+.sliderWrapper :global(.swiper-pagination-bullet-active) {
+  background-color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
+  .sliderWrapper :global(.swiper-pagination-bullet) {
+    width: 15px;
+    height: 15px;
+  }
+
   .crewContainer {
     padding: 2rem 2rem 0 2rem;
   }

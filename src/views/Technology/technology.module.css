@@ -1,0 +1,52 @@
+.technologyContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.spaceContainer {
+  width: 100%;
+  display: flex;
+}
+
+.bulletContainer {
+  margin-right: 80px;
+}
+.bulletContainer button {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #4c4d55;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.bulletContainer .active {
+  background-color: #ffffff;
+  border: none;
+  color: #000;
+}
+
+.spaceDataContainer {
+  width: 45%;
+  margin-right: 130px;
+}
+
+.spaceImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 450px;
+  height: auto;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1200px) {
+}
