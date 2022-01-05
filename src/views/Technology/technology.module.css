@@ -11,19 +11,25 @@
 }
 
 .bulletContainer {
+  width: fit-content;
   margin-right: 80px;
+  display: flex;
+  flex-direction: column;
 }
-.bulletContainer button {
-  display: block;
+.bulletButton {
+  cursor: pointer;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   border: 1px solid #4c4d55;
   color: #ffffff;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bulletContainer .active {
+.bulletButtonActive {
   background-color: #ffffff;
   border: none;
   color: #000;
