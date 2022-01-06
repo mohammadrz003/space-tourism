@@ -165,9 +165,7 @@
   }
 
   .navigateLine {
-    width: 100%;
-    min-width: 340px;
-    max-width: 500px;
+    width: calc(100% - 78px);
     height: 1px;
     background-color: #ffffff;
     opacity: 0.25;
