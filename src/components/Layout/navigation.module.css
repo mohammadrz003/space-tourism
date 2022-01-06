@@ -165,10 +165,12 @@
   }
 
   .navigateLine {
-    width: calc(100% - 78px);
+    width: 100%;
+    min-width: 340px;
+    max-width: 500px;
     height: 1px;
     background-color: #ffffff;
-    opacity: 25%;
+    opacity: 0.25;
     transform: translateX(55px);
     z-index: 1000;
   }
