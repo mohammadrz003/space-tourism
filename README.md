@@ -1,70 +1,174 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend Mentor - Space tourism website solution
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### `yarn start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  
 
-### `yarn test`
+-  [Overview](#overview)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  [The challenge](#the-challenge)
 
-### `yarn build`
+-  [Screenshot](#screenshot)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  [Links](#links)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  [My process](#my-process)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-  [Built with](#built-with)
 
-### `yarn eject`
+-  [What I learned](#what-i-learned)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-  [Continued development](#continued-development)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-  [Useful resources](#useful-resources)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-  [Author](#author)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  
 
-## Learn More
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Overview
 
-### Code Splitting
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### The challenge
 
-### Analyzing the Bundle Size
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Users should be able to:
 
-### Making a Progressive Web App
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- View the optimal layout for each of the website's pages depending on their device's screen size
 
-### Advanced Configuration
+- See hover states for all interactive elements on the page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- View each page and be able to toggle between the tabs to see new information
 
-### Deployment
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Screenshot
 
-### `yarn build` fails to minify
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Home page
+
+  
+
+![Home page](https://drive.google.com/uc?export=view&id=1jqlyQz0UKdirF029XQ03n4tlkVYLTiCW)
+
+  
+
+Destination page
+
+  
+
+![Home page](https://drive.google.com/uc?export=view&id=1jlDD3hy-M3gWKiJ66Q9aPlUnsEKqiPxR)
+
+Crew page
+
+  
+
+![Home page](https://drive.google.com/uc?export=view&id=1fnWUMY4Hk5ymTyJ_VCYjkg2mA_3coBTm)
+
+Technology page
+
+  
+
+![Home page](https://drive.google.com/uc?export=view&id=1flNIDmbpyK-jZhXvGOkY3nSLwVGS8W22)
+
+  
+  
+
+### Links
+
+  
+
+- Solution URL: [github.com/mohammadrezaii/space-tourism](https://github.com/mohammadrezaii/space-tourism)
+
+- Live Site URL: [mmd-space-tourism.netlify.app](https://mmd-space-tourism.netlify.app/)
+
+  
+
+## My process
+
+  
+
+### Built with
+
+  
+
+-  [React](https://reactjs.org/) - JS library
+
+-  [React Router](https://reactrouter.com/) - JS library
+
+- Semantic HTML5 markup
+
+- CSS module custom properties
+
+- Flexbox
+
+- CSS Grid
+
+- Mobile-first workflow
+
+  
+
+### What I learned
+
+  
+
+I learned how to change the background image based on the route we are on
+
+ 1. First we need to get the route address where we are
+```js
+const  path  =  useLocation().pathname;
+const  location  =  path.split("/")[1];
+```
+ 2. Then we give the element the name of the root as a class
+
+```html
+<div  className={`backgroundWrapper ${location}`}>
+</div>
+```
+
+ 3. Finally, we use the root name as a class in css and apply our
+    desired style
+
+```css
+.backgroundWrapper.destination {
+	background-image: url("*image url*");
+}
+```
+
+  
+
+### Continued development
+
+I want to use scss in future projects to make development faster and easier and I plan to do projects that are much more complex
+
+### Useful resources
+
+  
+
+-  [React-tabs](https://www.example.com) - This library helped me a lot to create tabs
+
+## Author
+
+  
+
+- Website - [mmdrz.xyz](https://mmdrz.xyz)
+
+- Twitter - [@mohammadrz003](https://twitter.com/mohammadrz003)
+
+- Telegram - [@mmdrz003](https://t.me/mmdrz003)

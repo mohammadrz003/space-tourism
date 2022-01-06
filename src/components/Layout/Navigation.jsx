@@ -1,8 +1,6 @@
 import styles from "./navigation.module.css";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/shared/logo.svg";
-import hamburgetIcon from "../../assets/shared/icon-hamburger.svg";
-import closeIcon from "../../assets/shared/icon-close.svg";
+
 import { useState } from "react";
 
 const Navigation = () => {
@@ -21,7 +19,7 @@ const Navigation = () => {
     <header className={styles.header}>
       <div className={styles.logoPart}>
         <div className={styles.logoPartInbox}>
-          <img src={logo} alt="" />
+          <img src="/assets/shared/logo.svg" alt="" />
           <div className={styles.navigateLine}></div>
         </div>
 
@@ -29,7 +27,7 @@ const Navigation = () => {
           onClick={menuStatusHandler}
           className={`${styles.hamburgetBtn}`}
         >
-          <img src={`${isMenuOpen ? closeIcon : hamburgetIcon}`} alt="" />
+          <img src={`${isMenuOpen ? "/assets/shared/icon-close.svg" : "/assets/shared/icon-hamburger.svg"}`} alt="" />
         </button>
       </div>
       <div style={menuOpenStyle} className={`${styles.navigatePart}`}>
