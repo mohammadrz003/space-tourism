@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const menuOpenStyle = {
     right: isMenuOpen ? "0" : "-100%",
-    transition: "500ms ease all"
+    transition: "500ms ease all",
   };
 
   const menuStatusHandler = () => {
@@ -22,7 +22,9 @@ const Navigation = () => {
       <div className={styles.logoPart}>
         <div className={styles.logoPartInbox}>
           <img src={logo} alt="" />
+          <div className={styles.navigateLine}></div>
         </div>
+
         <button
           onClick={menuStatusHandler}
           className={`${styles.hamburgetBtn}`}

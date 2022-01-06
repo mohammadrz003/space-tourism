@@ -157,6 +157,22 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .logoPartInbox {
+    width: 100%;
+    max-width: 576px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navigateLine {
+    width: calc(100% - 78px);
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 25%;
+    transform: translateX(55px);
+    z-index: 1000;
+  }
+
   .logoPart {
     width: 45%;
     display: flex;
@@ -168,6 +184,7 @@
     display: flex;
     position: initial;
     justify-content: flex-start;
+    align-items: flex-start;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

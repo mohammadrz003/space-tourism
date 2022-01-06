@@ -23,7 +23,7 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.heroExplore}>
-        <Link to="destination">
+        <Link to="destination" className={styles.exploreLink}>
           <button
             className={`${styles.exploreBtn} font-bellefair text-dark text-2xl lg:text-3xl`}
           >
