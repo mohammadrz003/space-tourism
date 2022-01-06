@@ -121,3 +121,14 @@
     font-size: 160px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .homeContainer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 15.6rem 4rem 4rem 4rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
