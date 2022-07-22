@@ -162,13 +162,3 @@ I want to use scss in future projects to make development faster and easier and 
   
 
 -  [React-tabs](https://www.example.com) - This library helped me a lot to create tabs
-
-## Author
-
-  
-
-- Website - [mmdrz.xyz](https://mmdrz.xyz)
-
-- Twitter - [@mohammadrz003](https://twitter.com/mohammadrz003)
-
-- Telegram - [@mmdrz003](https://t.me/mmdrz003)
